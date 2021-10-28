@@ -1,8 +1,8 @@
-describe('Log In', function(){
+describe('Log In Scenario - standard_user/secret_sauce', function(){
     it('Log in', function (){
-        cy.visit('http://siakad.polinema.ac.id/')
-            cy.get('#username').type('1941720166')
-            cy.get('#password').type('Daniswara123')
-            cy.get('.form-actions > .btn').click()
+        cy.visit('https://www.saucedemo.com/')
+            cy.get('#user-name').type('standard_user')
+            cy.get('#password').type('secret_sauce')
+            cy.get('#login-button').click()
     })
 })
