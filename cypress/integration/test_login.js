@@ -13,7 +13,7 @@ describe('Log In Scenario - standard_user/secret_sauce', function(){
             })
     })
 })
-
+/*
 describe('Log In Scenario - locked_out_user/secret_sauce', function(){
     it('Log in', function (){
 
@@ -60,4 +60,4 @@ describe('Log In Scenario - no username/no password', function(){
                 },
             })
     })
-})
+})*/
