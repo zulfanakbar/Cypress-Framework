@@ -1,7 +1,12 @@
-describe('Login Tests', function () {
+it.only('Login Test', function () {
+    //cy.request('https://www.saucedemo.com/')
+    cy.visit('https://www.saucedemo.com/')
+})
+
+/*describe('Login Tests', function () {
     it('Successfull login', function () {
         cy.visit('https://www.saucedemo.com/')
-        /*
+        
         cy.get(':nth-child(1) > .form-control')
         .type('test@test.com')
 
@@ -18,9 +23,9 @@ describe('Login Tests', function () {
         cy.get(':nth-child(3) > .nav-link')
         .should('have.attr', 'href', '/settings')
         cy.get('.container > .nav > :nth-child(2) > .nav-link')
-        .should('have.attr', 'href', '/editor')*/
+        .should('have.attr', 'href', '/editor')
     })
-})
+})*/
 
 
 /*describe('Login Test 1', () => {
