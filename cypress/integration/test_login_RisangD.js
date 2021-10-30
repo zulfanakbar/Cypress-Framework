@@ -1,6 +1,6 @@
 it.only('Login Test', function () {
     //cy.request('https://www.saucedemo.com/')
-    cy.visit('https://www.saucedemo.com/')
+    cy.visit('https://www.google.com/')
 })
 
 /*describe('Login Tests', function () {
