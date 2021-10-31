@@ -1,12 +1,13 @@
 describe('Log In Scenario - standard_user/secret_sauce', function(){
-    /*it('Log in', function (){
+    it('Log in', function (){
         cy.visit('https://www.saucedemo.com/')
             cy.get('#user-name').type('standard_user')
             cy.get('#password').type('secret_sauce')
             cy.get('#login-button').click()
-    })*/
+    })
+})
 
-    it('should able to login', () => {
+    /*it('should able to login', () => {
         cy.request({
             URL: "https://www.saucedemo.com/",
             method: 'POST',
@@ -17,7 +18,7 @@ describe('Log In Scenario - standard_user/secret_sauce', function(){
             }
         })
     }).then(res => cy.log(res))
-})
+})*/
 /*
 describe('Log In Scenario - locked_out_user/secret_sauce', function(){
     it('Log in', function (){

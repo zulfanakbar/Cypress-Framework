@@ -1,6 +1,7 @@
 it('Login Test', () => {
     //cy.request('https://www.saucedemo.com/')
     cy.visit('https://www.saucedemo.com/')
+    cy.get('#user-name').type('standard_user')
 })
 
 /*describe('Login Tests', function () {
