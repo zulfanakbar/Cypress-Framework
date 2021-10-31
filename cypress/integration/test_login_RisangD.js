@@ -1,9 +1,55 @@
-it('Login Test', () => {
-    //cy.request('https://www.saucedemo.com/')
+it('Login Test Normal', () => {
+    it('Should be Can Login', () => {
     cy.visit('https://www.saucedemo.com/')
-    //cy.get('#user-name').type('standard_user')
+    cy.get('#user-name').type('standard_user')
+    cy.get('#password').type('secret_sauce')
+    cy.get('#login-button').click()
+
+    cy.get('#react-burger-menu-btn').click()
+    cy.get('#logout_sidebar_link').click()
+    })
 })
 
+it('Log In Scenario - locked_out_user/secret_sauce', () => {
+    it('Should be Locked User', () => {
+    cy.visit('https://www.saucedemo.com/')
+    cy.get('#user-name').type('locked_out_user')
+    cy.get('#password').type('secret_sauce')
+    cy.get('#login-button').click()
+    })
+})
+
+it('Log In Scenario - problem_user/secret_sauce', () => {
+    it('Should be something problem', () => {
+    cy.visit('https://www.saucedemo.com/')
+    cy.get('#user-name').type('problem_user')
+    cy.get('#password').type('secret_sauce')
+    cy.get('#login-button').click()
+
+    cy.get('#react-burger-menu-btn').click()
+    cy.get('#logout_sidebar_link').click()
+    })
+})
+
+
+it('Log In Scenario - performance_glitch_user/secret_sauce', () => {
+    it('Should be something glitched', () => {
+    cy.visit('https://www.saucedemo.com/')
+    cy.get('#user-name').type('performance_glitch_user')
+    cy.get('#password').type('secret_sauce')
+    cy.get('#login-button').click()
+    })
+})
+
+
+it('Log In Scenario - wihout username/password', () => {
+    it('Should be cant logged in', () => {
+    cy.visit('https://www.saucedemo.com/')
+    cy.get('#user-name').type(' ')
+    cy.get('#password').type(' ')
+    cy.get('#login-button').click()
+    })
+})
 /*describe('Login Tests', function () {
     it('Successfull login', function () {
         cy.visit('https://www.saucedemo.com/')
