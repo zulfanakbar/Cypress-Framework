@@ -17,8 +17,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           spec: 
-            - cypress/integration/"Erika Amalia"/*
-            - cypress/integration/"Pramudya Wibowo"/*
-            - cypress/integration/"Risang Daniswara"/*
-            - cypress/integration/"Tasya Rachmah Sakinah"/*
-            - cypress/integration/zulfanUTS/*
+            - cypress/integration/*
