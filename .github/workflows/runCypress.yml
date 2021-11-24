@@ -10,7 +10,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Cypress run
+      - name: Pramudya Testing
         uses: cypress-io/github-action@v2
         with:
-          spec: cypress/integration/kelompok2/*
+          spec: cypress/integration/Pramudya/*
+
+      - name: Erika Testing
+        uses: cypress-io/github-action@v2
+        with:
+          spec: cypress/integration/Erika/*
