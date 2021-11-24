@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Pramudya Testing
+      - name: Risang Testing
         uses: cypress-io/github-action@v2
         with:
-          spec: cypress/integration/Pramudya/*
+          spec: cypress/integration/Risang/*
