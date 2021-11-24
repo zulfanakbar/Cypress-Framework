@@ -19,3 +19,8 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           spec: cypress/integration/Risang/*
+
+      - name: Tasya Testing
+        uses: cypress-io/github-action@v2
+        with:
+          spec: cypress/integration/Tasya/*
