@@ -24,7 +24,7 @@ describe('Checkout', () => {
         cy.get('.shopping_cart_link').click()
         cy.get('#checkout').click()
         cy.get('#first-name').type('Tasya')
-        cy.get('#last-name').type('')
+        cy.get('#last-name').type('Sakinah')
         cy.get('#postal-code').type('67316')
         cy.get('#continue').click()
         cy.get('#finish').click()
