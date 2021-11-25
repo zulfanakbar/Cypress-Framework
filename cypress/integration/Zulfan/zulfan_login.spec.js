@@ -7,7 +7,7 @@ describe('Login aplikasi', () => {
          }); 
       }); 
    it('Buka halaman utama', () => { 
-      cy.visit('localhost:8080'); 
+      cy.visit('https://www.saucedemo.com/'); 
       cy.contains('type'); 
    })
    it('Input menggunakan username yang salah', () => { 
