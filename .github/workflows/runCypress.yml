@@ -25,7 +25,7 @@ jobs:
         with:
           spec: cypress/integration/Tasya/*
           
-      - name: Tasya Testing
+      - name: Zulfan Testing
         uses: cypress-io/github-action@v2
         with:
           spec: cypress/integration/Zulfan/*
